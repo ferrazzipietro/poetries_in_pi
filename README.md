@@ -22,4 +22,5 @@ Add the poem text to the poetry.txt file. By default there is the first terzina 
 
 **Run from the command line:**
 % Rscript script.R NUMBER_OF_DIGITS --default-packages=dplyr, strgr
+
 NUMBER_OF_DIGITS: how many digits you want to search in (maximum is 1 million).

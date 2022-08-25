@@ -62,7 +62,7 @@ find_in_one_subseq <- function(full_seq, from, to, poetry){
 }
 
 sub_seq <- function(seq, how_many_digits_to_try){
-  if(how_many_digits_to_try>length(seq)){
+  if((how_many_digits_to_try/2)>length(seq)){
     print("ERROR: how_many_digits_to_try is greater than the total number of digits")
   }else return(seq[1:how_many_digits_to_try])
 }

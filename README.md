@@ -27,6 +27,6 @@ Add the poem text to the poetry.txt file. By default there is the first terzina 
 NUMBER_OF_DIGITS: how many digits you want to search in (maximum is 1 million).
 
 
-#Extensions
+# Extensions
 
 Adding new decimal digits to the 1_milion_decimal_digits.txt file will make you able to extend the search domain.

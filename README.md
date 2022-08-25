@@ -1,4 +1,4 @@
-# divina_commedia_in_pi
+# poetries_in_pi
 Is the first "terzina" of Dante's Divina Commedia encoded in the first million of decimal digits of pi?
 
 Pi  is an irrational number with a decimal representation that “never ends” (3.14159265…). 

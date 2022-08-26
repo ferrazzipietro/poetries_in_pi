@@ -96,7 +96,7 @@ main <- function(how_many_digits_to_try){
   digits <- readChar('pi_digits_1_milion.txt', file.info('pi_digits_1_milion.txt')$size) %>% str_sub(4,-2)
   seq <- sapply(seq(from=1, to=nchar(digits), by=2), function(i) substr(digits, i, i+1)) %>%
     as.numeric
-  poetry <- readChar('poetry.txt', file.info('incipit_DC.txt')$size) %>%
+  poetry <- readChar('poetry.txt', file.info('poetry.txt')$size) %>%
     clean_text
   res <- find_over_all_sequence(seq,poetry,how_many_digits_to_try)
   cat('\n\n The longest part of your poetry that is encoded in the first ',  

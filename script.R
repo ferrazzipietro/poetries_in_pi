@@ -101,6 +101,11 @@ main <- function(how_many_digits_to_try){
     as.numeric
   poetry <- readChar('poetry.txt', file.info('poetry.txt')$size) %>%
     clean_text
+  if((how_many_digits_to_try/2)<length(poetry)){
+    cat("the poetry has more letters than pairs of digits you selected to be used. Use a HOW_MANY_DIGITS_TO_TRY at least equal to",
+        length(poetry)*2, "\n")
+    return(-1)
+  }
   res <- find_over_all_sequence(seq,poetry,how_many_digits_to_try)
   cat('\n\n The longest part of your poetry that is encoded in the first ',  
   how_many_digits_to_try, ' decimal digits of pi is: \n "', 
@@ -110,5 +115,5 @@ main <- function(how_many_digits_to_try){
 
 args = commandArgs(trailingOnly=TRUE)
 res <- main(as.numeric(args[1]))
-
+#res <- main(1000000)
 

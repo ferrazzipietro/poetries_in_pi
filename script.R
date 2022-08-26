@@ -1,3 +1,6 @@
+if ( !("dplyr" %in% rownames(installed.packages()))) install.packages("dplyr")
+if ( !("stringi" %in% rownames(installed.packages()))) install.packages("stringi")
+if ( !("stringr" %in% rownames(installed.packages()))) install.packages("stringr")
 library(dplyr)
 library(stringi)
 library(stringr)

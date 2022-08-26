@@ -96,7 +96,7 @@ find_over_all_sequence <- function(seq, poetry,how_many_digits_to_try){
 
 main <- function(how_many_digits_to_try){
   print("it's gonna take a while....")
-  digits <- readChar('pi_digits_1_milion.txt', file.info('pi_digits_1_milion.txt')$size) %>% str_sub(4,-2)
+  digits <- readChar('1_milion_decimal_digits.txt', file.info('1_milion_decimal_digits.txt')$size) %>% str_sub(4,-2)
   seq <- sapply(seq(from=1, to=nchar(digits), by=2), function(i) substr(digits, i, i+1)) %>%
     as.numeric
   poetry <- readChar('poetry.txt', file.info('poetry.txt')$size) %>%

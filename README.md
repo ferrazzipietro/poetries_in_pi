@@ -14,7 +14,7 @@ you will obtain the Italian word “ciao”.
 
 We can extend the idea to the point of saying that all the poems written in the centuries are contained in the pi's decimals!
 
-In this project I used the first million of decimal digits of pi (`1_milion_decimal_digits.txt`) to find the longest possible part of whatever poem (`poetry.txt`).
+In this project I used the first million of decimal digits of pi (`1_milion_decimal_digits.txt`) to find the longest possible sequential part of whatever poem (`poetry.txt`) that exists in pi.
 
 # How to run
 

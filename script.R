@@ -1,7 +1,7 @@
 if ( !("dplyr" %in% rownames(installed.packages()))) install.packages("dplyr", repos = "http://cran.us.r-project.org")
 if ( !("stringi" %in% rownames(installed.packages()))) install.packages("stringi", repos = "http://cran.us.r-project.org")
 if ( !("stringr" %in% rownames(installed.packages()))) install.packages("stringr", repos = "http://cran.us.r-project.org")
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(stringi)
 library(stringr)
 
@@ -15,8 +15,8 @@ clean_text <- function(text){
 
 build_translation_matrix <- function(){
   # the encoding rule is creating on the fly, as needed 
-  alphabet <- c('a', 'b', 'c', 'd','e','f','g','h','i','l','m','n','o','p','q','r','s','t','u','v','z')
-  code <- matrix(NA,ncol=6, nrow=21, byrow=F) %>% data.frame
+  alphabet <- c('a', 'b', 'c', 'd','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z')
+  code <- matrix(NA,ncol=6, nrow=26, byrow=F) %>% data.frame
   code[,1] <- 0
   code[,2] <- alphabet
   # colnames(code) <- c('how_many_are_full', 'letter', 'code1', 'code2', 'code3')

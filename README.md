@@ -16,6 +16,10 @@ We can extend the idea to the point of saying that all the poems written in the 
 
 In this project I used the first million of decimal digits of pi (`1_milion_decimal_digits.txt`) to find the longest possible sequential part of whatever poem (`poetry.txt`) that exists in pi.
 
+# Requirements
+R installed on your machine. To download R go to https://cran.r-project.org.
+
+
 # How to run
 
 Add the poem text to the `poetry.txt` file. By default, there is the first terzina of Dante's Divina Commedia.
